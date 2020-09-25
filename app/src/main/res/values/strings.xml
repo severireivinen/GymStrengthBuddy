@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">GymStrengthBuddy</string>
+    <string name="settingsBtn">Settings</string>
+    <string name="squatBtn">Squat</string>
+    <string name="benchBtn">Benchpress</string>
+    <string name="deadliftBtn">Deadlift</string>
+    <string name="overheadpressBtn">Overheadpress</string>
+    <string name="appName">GymStrengthBuddy</string>
+    <string name="settingsHeader">Settings</string>
+    <string name="maxSquatText">Max Squat:</string>
+    <string name="maxBenchText">Max Bench:</string>
+    <string name="maxDeadliftText">Max Deadlift:</string>
+    <string name="maxOverheadpressText">Max Overheadpress:</string>
+    <string name="submitBtn">Submit</string>
+    <string name="day_squat_header">Squat Day</string>
+    <string name="day_bench_header">Bench Day</string>
+    <string name="table_row_week_1">Week 1</string>
+    <string name="tabel_row_week_2">Week 2</string>
+    <string name="table_row_week_3">Week 3</string>
+    <string name="table_row_week_4">Week 4</string>
+    <string name="table_row_set_1">Set 1</string>
+    <string name="table_row_set_2">Set 2</string>
+    <string name="table_row_set_3">Set 3</string>
+    <string name="day_deadlift_header">Deadlift Day</string>
+    <string name="day_overheadpress_header">Overheadpress Day</string>
+    <string name="day_overhead_header">Press Day</string>
+    <string name="workout_name" />
+    <string name="supportive1"></string>
+    <string name="supportive2" />
+    <string name="supportive3" />
+    <string name="supportive4"></string>
+</resources>
