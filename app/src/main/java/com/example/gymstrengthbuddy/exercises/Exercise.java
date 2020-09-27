@@ -4,15 +4,15 @@ import com.example.gymstrengthbuddy.Calculator;
 
 import java.util.ArrayList;
 
-public class MainExercise extends Calculator {
+public class Exercise extends Calculator {
     private double trainingMax;
     private ArrayList<String> squatSupp, benchSupp, deadliftSupp, overheadSupp;
 
-    public MainExercise(double max) {
+    public Exercise(double max) {
         this.trainingMax = (max * 0.9);
     }
 
-    public MainExercise() {
+    public Exercise() {
         this.squatSupp = new ArrayList<>();
         this.benchSupp = new ArrayList<>();
         this.deadliftSupp = new ArrayList<>();

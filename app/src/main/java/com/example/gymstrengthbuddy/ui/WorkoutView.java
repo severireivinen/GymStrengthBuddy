@@ -2,21 +2,19 @@ package com.example.gymstrengthbuddy.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
 import com.example.gymstrengthbuddy.MainActivity;
 import com.example.gymstrengthbuddy.R;
-import com.example.gymstrengthbuddy.exercises.MainExercise;
-import com.example.gymstrengthbuddy.exercises.SupportiveExercise;
+import com.example.gymstrengthbuddy.exercises.Exercise;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class WorkoutView extends AppCompatActivity {
-    private MainExercise mainExercise, suppExercise;
+    private Exercise mainExercise, suppExercise;
     private DecimalFormat decimalFormat;
 
     @Override
@@ -30,11 +28,11 @@ public class WorkoutView extends AppCompatActivity {
 
         // Main workout sets
         double maxWeight= getIntent().getDoubleExtra(MainActivity.RESULTS_EXTRA, 0);
-        mainExercise = new MainExercise(maxWeight);
+        mainExercise = new Exercise(maxWeight);
         setMainSets(mainExercise);
 
         // Supportive workout
-        suppExercise = new MainExercise();
+        suppExercise = new Exercise();
         // Add TextViews to a list
         ArrayList<TextView> supportiveExercisesTv = new ArrayList<>();
         addTextViewsToList(supportiveExercisesTv);
@@ -67,7 +65,7 @@ public class WorkoutView extends AppCompatActivity {
     }
 
     // Update workout set table
-    public void setMainSets(MainExercise mainExercise) {
+    public void setMainSets(Exercise mainExercise) {
         ((TextView)findViewById(R.id.week1set1)).setText(decimalFormat.format(mainExercise.getSetOne(mainExercise.getTrainingMax())) + " x5");
         ((TextView)findViewById(R.id.week1set2)).setText(decimalFormat.format(mainExercise.getSetTwo(mainExercise.getTrainingMax())) + " x5");
         ((TextView)findViewById(R.id.week1set3)).setText(decimalFormat.format(mainExercise.getSetThree(mainExercise.getTrainingMax())) + " x5");
@@ -83,6 +81,7 @@ public class WorkoutView extends AppCompatActivity {
         Log.d("setSets", "Sets read");
     }
 
+    // Add TextViews to a new list
     public void addTextViewsToList(ArrayList<TextView> tv) {
         tv.add(((TextView)findViewById(R.id.supportive1)));
         tv.add(((TextView)findViewById(R.id.supportive2)));
