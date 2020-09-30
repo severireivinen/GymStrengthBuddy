@@ -41,22 +41,30 @@ public class WorkoutView extends AppCompatActivity {
         switch (((TextView)findViewById(R.id.workout_name)).getText().toString()) {
             case "Squat Day":
                 for (int i = 0; i < supportiveExercisesTv.size(); i++) {
-                    supportiveExercisesTv.get(i).setText(suppExercise.getSquatSupp(i));
+                    for (int j = 0; j < suppExercise.getSquatSuppList().size(); j++) {
+                        supportiveExercisesTv.get(j).setText(suppExercise.getSquatSupp(j));
+                    }
                 }
                 break;
             case "Bench Press Day":
                 for (int i = 0; i < supportiveExercisesTv.size(); i++) {
-                    supportiveExercisesTv.get(i).setText(suppExercise.getBenchSupp(i));
+                    for (int j = 0; j < suppExercise.getBenchSuppList().size(); j++) {
+                        supportiveExercisesTv.get(j).setText(suppExercise.getBenchSupp(j));
+                    }
                 }
                 break;
             case "Deadlift Day":
                 for (int i = 0; i < supportiveExercisesTv.size(); i++) {
-                    supportiveExercisesTv.get(i).setText(suppExercise.getDeadliftSupp(i));
+                    for (int j = 0; j < suppExercise.getDeadliftSuppList().size(); j++) {
+                        supportiveExercisesTv.get(j).setText(suppExercise.getDeadliftSupp(j));
+                    }
                 }
                 break;
             case "Overhead Press Day":
                 for (int i = 0; i < supportiveExercisesTv.size(); i++) {
-                    supportiveExercisesTv.get(i).setText(suppExercise.getOverheadSupp(i));
+                    for (int j = 0; j < suppExercise.getOverheadSuppList().size(); j++) {
+                        supportiveExercisesTv.get(j).setText(suppExercise.getOverheadSupp(j));
+                    }
                 }
                 break;
             default:
@@ -68,10 +76,10 @@ public class WorkoutView extends AppCompatActivity {
     public void setMainSets(Exercise mainExercise) {
         ((TextView)findViewById(R.id.week1set1)).setText(decimalFormat.format(mainExercise.getSetOne(mainExercise.getTrainingMax())) + " x5");
         ((TextView)findViewById(R.id.week1set2)).setText(decimalFormat.format(mainExercise.getSetTwo(mainExercise.getTrainingMax())) + " x5");
-        ((TextView)findViewById(R.id.week1set3)).setText(decimalFormat.format(mainExercise.getSetThree(mainExercise.getTrainingMax())) + " x5");
+        ((TextView)findViewById(R.id.week1set3)).setText(decimalFormat.format(mainExercise.getSetThree(mainExercise.getTrainingMax())) + " x5+");
         ((TextView)findViewById(R.id.week2set1)).setText(decimalFormat.format(mainExercise.getSetOneWeekTwo(mainExercise.getTrainingMax())) + " x3");
         ((TextView)findViewById(R.id.week2set2)).setText(decimalFormat.format(mainExercise.getSetTwoWeekTwo(mainExercise.getTrainingMax())) + " x3");
-        ((TextView)findViewById(R.id.week2set3)).setText(decimalFormat.format(mainExercise.getSetThreeWeekTwo(mainExercise.getTrainingMax())) + " x3");
+        ((TextView)findViewById(R.id.week2set3)).setText(decimalFormat.format(mainExercise.getSetThreeWeekTwo(mainExercise.getTrainingMax())) + " x3+");
         ((TextView)findViewById(R.id.week3set1)).setText(decimalFormat.format(mainExercise.getSetOneWeekThree(mainExercise.getTrainingMax())) + " x5");
         ((TextView)findViewById(R.id.week3set2)).setText(decimalFormat.format(mainExercise.getSetTwoWeekThree(mainExercise.getTrainingMax())) + " x3");
         ((TextView)findViewById(R.id.week3set3)).setText(decimalFormat.format(mainExercise.getSetThreeWeekThree(mainExercise.getTrainingMax())) + " x1+");

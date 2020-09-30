@@ -41,6 +41,22 @@ public class Exercise extends Calculator {
         return this.overheadSupp.get(i);
     }
 
+    public ArrayList<String> getSquatSuppList() {
+        return this.squatSupp;
+    }
+
+    public ArrayList<String> getBenchSuppList() {
+        return this.benchSupp;
+    }
+
+    public ArrayList<String> getDeadliftSuppList() {
+        return this.deadliftSupp;
+    }
+
+    public ArrayList<String> getOverheadSuppList() {
+        return this.overheadSupp;
+    }
+
     public void fillSquat(ArrayList<String>squatList) {
         squatList.add("Legpress");
         squatList.add("Leg Extension");

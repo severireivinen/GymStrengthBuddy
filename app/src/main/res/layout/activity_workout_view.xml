@@ -7,10 +7,12 @@
     tools:context=".ui.WorkoutView">
 
     <TextView
+        android:background="@drawable/my_border"
         android:id="@+id/supportive4"
         android:layout_width="341dp"
         android:layout_height="52dp"
         android:text="@string/supportive4"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -18,10 +20,12 @@
         app:layout_constraintTop_toBottomOf="@+id/supportive3" />
 
     <TextView
+        android:background="@drawable/my_border"
         android:id="@+id/supportive3"
         android:layout_width="341dp"
         android:layout_height="52dp"
         android:text="@string/supportive3"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/supportive4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -29,10 +33,12 @@
         app:layout_constraintTop_toBottomOf="@+id/supportive2" />
 
     <TextView
+        android:background="@drawable/my_border"
         android:id="@+id/supportive2"
         android:layout_width="341dp"
         android:layout_height="52dp"
         android:text="@string/supportive2"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/supportive3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -47,7 +53,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44">
 
         <TableRow
             android:layout_width="match_parent"
@@ -62,30 +69,38 @@
             <TextView
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip"
                 android:text="@string/table_row_week_1"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip"
                 android:text="@string/tabel_row_week_2"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip"
                 android:text="@string/table_row_week_3"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip"
                 android:text="@string/table_row_week_4"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -96,31 +111,37 @@
             <TextView
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip"
-                android:text="@string/table_row_set_1" />
+                android:text="@string/table_row_set_1"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/week1set1"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
 
             <TextView
                 android:id="@+id/week2set1"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
 
             <TextView
                 android:id="@+id/week3set1"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
 
             <TextView
                 android:id="@+id/week4set1"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
         </TableRow>
 
@@ -131,31 +152,37 @@
             <TextView
                 android:layout_width="78.4dp"
                 android:layout_height="match_parent"
+                android:background="@drawable/my_border"
                 android:padding="3dip"
-                android:text="@string/table_row_set_2" />
+                android:text="@string/table_row_set_2"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/week1set2"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
 
             <TextView
                 android:id="@+id/week2set2"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
 
             <TextView
                 android:id="@+id/week3set2"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
 
             <TextView
                 android:id="@+id/week4set2"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
         </TableRow>
 
@@ -166,31 +193,37 @@
             <TextView
                 android:layout_width="78.4dp"
                 android:layout_height="match_parent"
+                android:background="@drawable/my_border"
                 android:padding="3dip"
-                android:text="@string/table_row_set_3" />
+                android:text="@string/table_row_set_3"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/week1set3"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
 
             <TextView
                 android:id="@+id/week2set3"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
 
             <TextView
                 android:id="@+id/week3set3"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
 
             <TextView
                 android:id="@+id/week4set3"
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip" />
         </TableRow>
 
@@ -211,13 +244,15 @@
         app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
+        android:background="@drawable/my_border"
         android:id="@+id/supportive1"
         android:layout_width="341dp"
         android:layout_height="52dp"
         android:text="@string/supportive1"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/supportive2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
