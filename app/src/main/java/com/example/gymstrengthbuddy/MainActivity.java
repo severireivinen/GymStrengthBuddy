@@ -8,22 +8,39 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.gymstrengthbuddy.ui.Settings;
+import com.example.gymstrengthbuddy.ui.Why531;
 import com.example.gymstrengthbuddy.ui.WorkoutView;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
-    public static final String RESULTS_EXTRA = "com.example.gymstrengthbuddy.RESULTS";
-    public static final String WORKOUT_NAME_EXTRA = "com.example.gymstrengthbuddy.NAME";
-    public static final String FIRST_OPEN = "com.example.gymstrengthbuddy.FIRSTOPEN";
+    public static final String RESULTS_EXTRA = "com.example.gymstrengthbuddy.RESULTS";  // User input weights
+    public static final String WORKOUT_NAME_EXTRA = "com.example.gymstrengthbuddy.NAME";    // Workout name
+    public static final String FIRST_OPEN = "com.example.gymstrengthbuddy.FIRSTOPEN";   // First time user? (boolean)
     Settings data = new Settings();
+    String[] quote = new String [] {"‘The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion.’\n— Arnold Schwarzenegger, seven-time Mr. Olympia",
+            "‘If something stands between you and your success, move it. Never be denied.’\n— Dwayne ‘The Rock’ Johnson, actor and pro wrestler",
+            "‘Success is walking from failure to failure with no loss of enthusiasm.’\n— Winston Churchill, British statesman and Prime Minister of the United Kingdom",
+            "Always remember to properly warm up before starting your workout!",
+            "Remember to stretch",
+            "When testing your One Rep Maxes, ask for a spotter.",
+            "It's not only about lifting heavy. Eat and sleep well!"};
+    Random r = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Set random quote
+        ((TextView)findViewById(R.id.quote)).setText(quote[r.nextInt(quote.length)]);
+
+        // Check if the user has opened the app before. Gives instructions for first time users.
         SharedPreferences settings = getSharedPreferences(FIRST_OPEN, 0);
         boolean dialogShow = settings.getBoolean("dialogShow", false);
 
@@ -49,6 +66,12 @@ public class MainActivity extends AppCompatActivity {
     // Open settings view
     public void openSettings(View v) {
         Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
+
+    // Open WHY 5/3/1 view
+    public void openWhy(View v) {
+        Intent intent = new Intent(this, Why531.class);
         startActivity(intent);
     }
 

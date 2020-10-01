@@ -27,18 +27,28 @@ public class Settings extends AppCompatActivity {
 
         // Catch error if any of the userInput fields is empty
         try {
-            setResults();
+            squat.setText(Double.toString(readData("DATA_SQUAT", this)));
         } catch (Exception e) {
             Log.d("SETTINGS:", "Empty fields!" + e.getMessage());
         }
-    }
 
-    // Load previously entered user results to the fields (uses shared prefs).
-    private void setResults() {
-        squat.setText(Double.toString(readData("DATA_SQUAT", this)));
-        bench.setText(Double.toString(readData("DATA_BENCH", this)));
-        deadlift.setText(Double.toString(readData("DATA_DEADLIFT", this)));
-        overheadpress.setText(Double.toString(readData("DATA_OVERHEADPRESS", this)));
+        try {
+            bench.setText(Double.toString(readData("DATA_BENCH", this)));
+        } catch (Exception e) {
+            Log.d("SETTINGS:", "Empty fields!" + e.getMessage());
+        }
+
+        try {
+            deadlift.setText(Double.toString(readData("DATA_DEADLIFT", this)));
+        } catch (Exception e) {
+            Log.d("SETTINGS:", "Empty fields!" + e.getMessage());
+        }
+
+        try {
+            overheadpress.setText(Double.toString(readData("DATA_OVERHEADPRESS", this)));
+        } catch (Exception e) {
+            Log.d("SETTINGS:", "Empty fields!" + e.getMessage());
+        }
     }
 
     // Submit user max weights

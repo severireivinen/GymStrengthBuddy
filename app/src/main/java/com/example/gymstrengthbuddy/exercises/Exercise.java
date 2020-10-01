@@ -58,30 +58,30 @@ public class Exercise extends Calculator {
     }
 
     public void fillSquat(ArrayList<String>squatList) {
-        squatList.add("Legpress");
-        squatList.add("Leg Extension");
-        squatList.add("Leg Curl");
-        squatList.add("Planking");
+        squatList.add("Legpress\nSets: 4\t\tReps: 8-12");
+        squatList.add("Leg Extension\nSets: 3\t\tReps: 10-15");
+        squatList.add("Leg Curl\nSets: 4\t\tReps: 10-15");
+        squatList.add("Planking\nSets: 3\t\tTime: 60-120s");
     }
 
     public void fillBench(ArrayList<String>benchList) {
-        benchList.add("Incline Bench Press");
-        benchList.add("Dumbell Flies");
-        benchList.add("Skull Crushers");
-        benchList.add("Cable Extension");
+        benchList.add("Incline Bench Press\nSets: 4\t\tReps: 8-12");
+        benchList.add("Dumbbell Flies\nSets: 3\t\tReps: 10-12");
+        benchList.add("Skull Crushers\nSets: 4\t\tReps: 8-12");
+        benchList.add("Cable Extension\nSets: 3\t\tReps: 10-15");
     }
 
     public void fillDeadlift(ArrayList<String>deadliftList) {
-        deadliftList.add("Pullups");
-        deadliftList.add("T-bat Row");
-        deadliftList.add("Dumbell Row");
-        deadliftList.add("Leg Raises");
+        deadliftList.add("Pullups\nSets: 4\t\tReps: 8-12");
+        deadliftList.add("T-bat Row\nSets: 4\t\tReps: 8-12");
+        deadliftList.add("Dumbbell Row\nSets: 3\t\tReps: 8-12");
+        deadliftList.add("Leg Raises\nSets: 3\t\tReps: 10-15");
     }
 
     public void fillOverhead(ArrayList<String>pressList) {
-        pressList.add("Dumbell Press");
-        pressList.add("Side Laterals");
-        pressList.add("Bar curls");
-        pressList.add("Dumbell curls");
+        pressList.add("Dumbbell Overhead Press\nSets: 4\t\tReps: 8-12");
+        pressList.add("Side Laterals\nSets: 4\t\tReps: 8-12");
+        pressList.add("Barbell Curls\nSets: 4\t\tReps: 10-12");
+        pressList.add("Dumbbell Curls\nSets: 3\t\tReps: 10-12");
     }
 }

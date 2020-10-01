@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     tools:context=".ui.WorkoutView">
 
     <TextView
-        android:background="@drawable/my_border"
         android:id="@+id/supportive4"
         android:layout_width="341dp"
         android:layout_height="52dp"
+        android:gravity="center"
         android:text="@string/supportive4"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,11 +23,13 @@
         app:layout_constraintTop_toBottomOf="@+id/supportive3" />
 
     <TextView
-        android:background="@drawable/my_border"
         android:id="@+id/supportive3"
         android:layout_width="341dp"
         android:layout_height="52dp"
+        android:gravity="center"
         android:text="@string/supportive3"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/supportive4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,11 +38,13 @@
         app:layout_constraintTop_toBottomOf="@+id/supportive2" />
 
     <TextView
-        android:background="@drawable/my_border"
         android:id="@+id/supportive2"
         android:layout_width="341dp"
         android:layout_height="52dp"
+        android:gravity="center"
         android:text="@string/supportive2"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/supportive3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +71,8 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:padding="3dip"
-                android:text="" />
+                android:text=""
+                android:background="@drawable/my_border" />
 
             <TextView
                 android:layout_width="78.4dp"
@@ -235,6 +243,7 @@
         android:layout_height="88dp"
         android:text="@string/workout_name"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -244,12 +253,13 @@
         app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
-        android:background="@drawable/my_border"
         android:id="@+id/supportive1"
         android:layout_width="341dp"
         android:layout_height="52dp"
+        android:gravity="center"
         android:text="@string/supportive1"
-        android:textAlignment="textStart"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/supportive2"
         app:layout_constraintEnd_toEndOf="parent"
