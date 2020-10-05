@@ -3,110 +3,110 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@android:color/black"
     android:layout_height="match_parent"
+    android:background="#182130"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/settingsBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="openSettings"
-        android:text="@string/settingsBtn"
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="408dp"
+        android:layout_height="118dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:background="#202B40"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012" />
+        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/squatBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="openWorkoutView"
-        android:text="@string/squatBtn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
-
-    <Button
+    <ImageButton
         android:id="@+id/benchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="openWorkoutView"
-        android:text="@string/benchBtn"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/overheadpressBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/squatBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/gsb_benchpress" />
 
-    <Button
+    <ImageButton
         android:id="@+id/deadliftBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="openWorkoutView"
-        android:text="@string/deadliftBtn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/quote"
+        app:layout_constraintEnd_toStartOf="@+id/overheadpressBtn"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/squatBtn"
+        app:srcCompat="@drawable/gsb_deadlift" />
 
-    <Button
+    <ImageButton
         android:id="@+id/overheadpressBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="openWorkoutView"
-        android:text="@string/overheadpressBtn"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/quote"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/deadliftBtn"
+        app:layout_constraintTop_toBottomOf="@+id/benchBtn"
+        app:srcCompat="@drawable/gsb_overheadpress" />
 
-    <TextView
-        android:id="@+id/appName"
-        android:layout_width="306dp"
-        android:layout_height="43dp"
-        android:text="@string/appName"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
-
-    <Button
-        android:id="@+id/button"
+    <ImageButton
+        android:id="@+id/squatBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="openWhy"
-        android:text="@string/why_5_3_1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        android:onClick="openWorkoutView"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/deadliftBtn"
+        app:layout_constraintEnd_toStartOf="@+id/benchBtn"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/gsb_squat" />
 
-    <TextView
-        android:id="@+id/quote"
-        android:layout_width="383dp"
-        android:layout_height="156dp"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:onClick="openWhy"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/settingsBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gsbinfo" />
+
+    <ImageButton
+        android:id="@+id/settingsBtn"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:onClick="openSettings"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gsbsettings" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="@+id/quote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83" />
+        app:layout_constraintVertical_bias="0.19999999"
+        app:srcCompat="@drawable/gsblogo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

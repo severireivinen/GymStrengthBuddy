@@ -71,4 +71,6 @@
     <string name="header13">Sample Workout: The Triumvirate</string>
     <string name="text13">"The Triumvirate uses three exercises per workout, one of which is a core lift. Before each workout, do a warm-up that includes mobility, flexibility, something to raise your core temperature and heart rate (like rope jumping), and foam rolling.\n\nI recommend adding two or three conditioning sessions per week, using hill sprints, Prowler pushes, or whatever else works for you.\n\nIn all workouts, rest 3 to 5 minutes between sets of the core lift, and 1 to 2 minutes between sets of the assistance exercises.\n\nRemember that you're calculating percentages based on 90% of your current 1RM in each lift, not from the actual 1RM.\n"</string>
     <string name="why_5_3_1">Why 5/3/1</string>
+    <string name="main_exercise">Main exercise</string>
+    <string name="supportive_exercises">Supportive exercises</string>
 </resources>

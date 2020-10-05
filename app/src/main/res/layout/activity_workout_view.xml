@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
+    android:background="#182130"
     tools:context=".ui.WorkoutView">
 
     <TextView
@@ -61,7 +61,7 @@
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44">
+        app:layout_constraintVertical_bias="0.35000002">
 
         <TableRow
             android:layout_width="match_parent"
@@ -70,9 +70,10 @@
             <TextView
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
+                android:background="@drawable/my_border"
                 android:padding="3dip"
                 android:text=""
-                android:background="@drawable/my_border" />
+                android:textColor="#202B40" />
 
             <TextView
                 android:layout_width="78.4dp"
@@ -81,6 +82,7 @@
                 android:padding="3dip"
                 android:text="@string/table_row_week_1"
                 android:textAlignment="center"
+                android:textColor="#202B40"
                 android:textStyle="bold" />
 
             <TextView
@@ -90,6 +92,7 @@
                 android:padding="3dip"
                 android:text="@string/tabel_row_week_2"
                 android:textAlignment="center"
+                android:textColor="#202B40"
                 android:textStyle="bold" />
 
             <TextView
@@ -99,6 +102,7 @@
                 android:padding="3dip"
                 android:text="@string/table_row_week_3"
                 android:textAlignment="center"
+                android:textColor="#202B40"
                 android:textStyle="bold" />
 
             <TextView
@@ -108,6 +112,7 @@
                 android:padding="3dip"
                 android:text="@string/table_row_week_4"
                 android:textAlignment="center"
+                android:textColor="#202B40"
                 android:textStyle="bold" />
 
         </TableRow>
@@ -122,6 +127,7 @@
                 android:background="@drawable/my_border"
                 android:padding="3dip"
                 android:text="@string/table_row_set_1"
+                android:textColor="#202B40"
                 android:textStyle="bold" />
 
             <TextView
@@ -129,6 +135,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
 
             <TextView
@@ -136,6 +143,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
 
             <TextView
@@ -143,6 +151,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
 
             <TextView
@@ -150,6 +159,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
         </TableRow>
 
@@ -163,6 +173,7 @@
                 android:background="@drawable/my_border"
                 android:padding="3dip"
                 android:text="@string/table_row_set_2"
+                android:textColor="#202B40"
                 android:textStyle="bold" />
 
             <TextView
@@ -170,6 +181,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
 
             <TextView
@@ -177,6 +189,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
 
             <TextView
@@ -184,6 +197,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
 
             <TextView
@@ -191,6 +205,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
         </TableRow>
 
@@ -204,6 +219,7 @@
                 android:background="@drawable/my_border"
                 android:padding="3dip"
                 android:text="@string/table_row_set_3"
+                android:textColor="#202B40"
                 android:textStyle="bold" />
 
             <TextView
@@ -211,6 +227,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
 
             <TextView
@@ -218,6 +235,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
 
             <TextView
@@ -225,6 +243,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
 
             <TextView
@@ -232,6 +251,7 @@
                 android:layout_width="78.4dp"
                 android:layout_height="50dp"
                 android:background="@drawable/my_border"
+                android:textColor="#202B40"
                 android:padding="3dip" />
         </TableRow>
 
@@ -241,6 +261,7 @@
         android:id="@+id/workout_name"
         android:layout_width="362dp"
         android:layout_height="88dp"
+        android:layout_marginTop="16dp"
         android:text="@string/workout_name"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -250,7 +271,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002" />
+        app:layout_constraintVertical_bias="0.01999998" />
 
     <TextView
         android:id="@+id/supportive1"
@@ -264,6 +285,33 @@
         app:layout_constraintBottom_toTopOf="@+id/supportive2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="342dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/supportive_exercises"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="355dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/main_exercise"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workout_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

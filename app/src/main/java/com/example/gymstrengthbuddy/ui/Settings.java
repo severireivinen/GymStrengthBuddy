@@ -1,9 +1,12 @@
 package com.example.gymstrengthbuddy.ui;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -11,6 +14,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.gymstrengthbuddy.R;
+import com.google.android.material.snackbar.Snackbar;
 
 public class Settings extends AppCompatActivity {
     private EditText squat, bench, deadlift, overheadpress;
@@ -19,6 +23,19 @@ public class Settings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        // Define ActionBar object
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+
+        // Define ColorDrawable object and parse color
+        // using parseColor method
+        // with color hash code as its parameter
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#182130"));
+
+        // Set BackgroundDrawable
+        actionBar.setBackgroundDrawable(colorDrawable);
 
         squat = findViewById(R.id.squatInput);
         bench = findViewById(R.id.benchInput);
@@ -57,6 +74,8 @@ public class Settings extends AppCompatActivity {
         saveData("DATA_BENCH", bench.getText().toString(), this);
         saveData("DATA_DEADLIFT", deadlift.getText().toString(), this);
         saveData("DATA_OVERHEADPRESS", overheadpress.getText().toString(), this);
+        Snackbar savedField = Snackbar.make(v, "Weights have been saved", Snackbar.LENGTH_LONG);
+        savedField.show();
     }
 
     // Save Data
