@@ -26,119 +26,118 @@
         android:id="@+id/maxSquatText"
         android:layout_width="140dp"
         android:layout_height="45dp"
+        android:gravity="center"
         android:text="@string/maxSquatText"
         android:textAlignment="textStart"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintBottom_toTopOf="@+id/maxBenchText"
+        app:layout_constraintEnd_toStartOf="@+id/squatInput"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16000003" />
+        app:layout_constraintTop_toBottomOf="@+id/settingsHeader" />
 
     <TextView
         android:id="@+id/maxBenchText"
         android:layout_width="140dp"
         android:layout_height="45dp"
+        android:gravity="center"
         android:text="@string/maxBenchText"
         android:textAlignment="textStart"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintBottom_toTopOf="@+id/maxDeadliftText"
+        app:layout_constraintEnd_toStartOf="@+id/benchInput"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintTop_toBottomOf="@+id/maxSquatText" />
 
     <TextView
         android:id="@+id/maxDeadliftText"
         android:layout_width="140dp"
         android:layout_height="45dp"
+        android:gravity="center"
         android:text="@string/maxDeadliftText"
         android:textAlignment="textStart"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintBottom_toTopOf="@+id/maxOverheadpressText"
+        app:layout_constraintEnd_toStartOf="@+id/deadliftInput"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintTop_toBottomOf="@+id/maxBenchText" />
 
     <TextView
         android:id="@+id/maxOverheadpressText"
         android:layout_width="140dp"
         android:layout_height="45dp"
+        android:gravity="center"
         android:text="@string/maxOverheadpressText"
         android:textAlignment="textStart"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintBottom_toTopOf="@+id/submitBtn"
+        app:layout_constraintEnd_toStartOf="@+id/overheadpressInput"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/maxDeadliftText"
+        app:layout_constraintVertical_bias="0.397" />
 
     <EditText
         android:id="@+id/squatInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#202B40"
         android:ems="10"
         android:inputType="numberDecimal"
         android:textColor="#FFFFFF"
-        android:background="#202B40"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/maxSquatText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16000003" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/maxSquatText" />
 
     <EditText
         android:id="@+id/benchInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#202B40"
         android:ems="10"
         android:inputType="numberDecimal"
         android:textColor="#FFFFFF"
-        android:background="#202B40"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/maxBenchText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/maxBenchText" />
 
     <EditText
         android:id="@+id/deadliftInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#202B40"
         android:ems="10"
         android:inputType="numberDecimal"
         android:textColor="#FFFFFF"
-        android:background="#202B40"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/maxDeadliftText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/maxDeadliftText" />
 
     <EditText
         android:id="@+id/overheadpressInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#202B40"
         android:ems="10"
         android:inputType="numberDecimal"
         android:textColor="#FFFFFF"
-        android:background="#202B40"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/maxOverheadpressText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/maxOverheadpressText" />
 
     <Button
         android:id="@+id/submitBtn"
