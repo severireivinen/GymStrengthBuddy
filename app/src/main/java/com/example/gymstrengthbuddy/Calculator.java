@@ -1,5 +1,5 @@
 package com.example.gymstrengthbuddy;
-/** Jon Nesten, Severi Reivinen, Nicolas Calisiyor
+/** @author Jon Nesten, Severi Reivinen, Nicolas Calisiyor
  */
 public class Calculator {
 
