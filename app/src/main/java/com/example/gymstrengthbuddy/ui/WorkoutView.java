@@ -15,7 +15,7 @@ import com.example.gymstrengthbuddy.exercises.Exercise;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-/* Jon Nesten, Severi Reivinen, Nicolas Calisiyor
+/** Jon Nesten, Severi Reivinen, Nicolas Calisiyor
  */
 public class WorkoutView extends AppCompatActivity {
     private Exercise mainExercise, suppExercise;
@@ -26,37 +26,37 @@ public class WorkoutView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workout_view);
 
-        /* Define ActionBar object */
+        /** Define ActionBar object */
         ActionBar actionBar;
         actionBar = getSupportActionBar();
 
-        /* Define ColorDrawable object and parse color
+        /** Define ColorDrawable object and parse color
            using parseColor method
            with color hash code as its parameter */
         ColorDrawable colorDrawable
                 = new ColorDrawable(Color.parseColor("#182130"));
 
-        /* Set BackgroundDrawable */
+        /** Set BackgroundDrawable */
         actionBar.setBackgroundDrawable(colorDrawable);
 
         decimalFormat = new DecimalFormat("0.00");
 
-        /* Set name for the workout day */
+        /** Set name for the workout day */
         ((TextView)findViewById(R.id.workout_name)).setText(getIntent().getStringExtra(MainActivity.WORKOUT_NAME_EXTRA));
 
-        /* Main workout sets */
+        /** Main workout sets */
         double maxWeight= getIntent().getDoubleExtra(MainActivity.RESULTS_EXTRA, 0);
         mainExercise = new Exercise(maxWeight);
         setMainSets(mainExercise);
 
-        /* Supportive workout */
+        /** Supportive workout */
         suppExercise = new Exercise();
 
-        /* Add TextViews to a list */
+        /** Add TextViews to a list */
         ArrayList<TextView> supportiveExercisesTv = new ArrayList<>();
         addTextViewsToList(supportiveExercisesTv);
 
-        /* Set supportive exercises for each day */
+        /** Set supportive exercises for each day */
         switch (((TextView)findViewById(R.id.workout_name)).getText().toString()) {
             case "Squat Day":
                 for (int i = 0; i < supportiveExercisesTv.size(); i++) {
@@ -91,7 +91,7 @@ public class WorkoutView extends AppCompatActivity {
         }
     }
 
-    /* Update workout set table */
+    /** Update workout set table */
     public void setMainSets(Exercise mainExercise) {
         ((TextView)findViewById(R.id.week1set1)).setText(decimalFormat.format(mainExercise.getSetOne(mainExercise.getTrainingMax())) + " x5");
         ((TextView)findViewById(R.id.week1set2)).setText(decimalFormat.format(mainExercise.getSetTwo(mainExercise.getTrainingMax())) + " x5");
@@ -108,7 +108,7 @@ public class WorkoutView extends AppCompatActivity {
         Log.d("setSets", "Sets read");
     }
 
-    /* Add TextViews to a new list */
+    /** Add TextViews to a new list */
     public void addTextViewsToList(ArrayList<TextView> tv) {
         tv.add(((TextView)findViewById(R.id.supportive1)));
         tv.add(((TextView)findViewById(R.id.supportive2)));

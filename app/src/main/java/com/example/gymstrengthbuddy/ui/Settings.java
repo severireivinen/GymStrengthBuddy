@@ -15,7 +15,7 @@ import android.widget.EditText;
 
 import com.example.gymstrengthbuddy.R;
 import com.google.android.material.snackbar.Snackbar;
-/* Jon Nesten, Severi Reivinen, Nicolas Calisiyor
+/** Jon Nesten, Severi Reivinen, Nicolas Calisiyor
  */
 public class Settings extends AppCompatActivity {
     private EditText squat, bench, deadlift, overheadpress;
@@ -25,17 +25,17 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        /* Define ActionBar object */
+        /** Define ActionBar object */
         ActionBar actionBar;
         actionBar = getSupportActionBar();
 
-        /* Define ColorDrawable object and parse color
+        /** Define ColorDrawable object and parse color
            using parseColor method
            with color hash code as its parameter */
         ColorDrawable colorDrawable
                 = new ColorDrawable(Color.parseColor("#182130"));
 
-        /* Set BackgroundDrawable */
+        /** Set BackgroundDrawable */
         actionBar.setBackgroundDrawable(colorDrawable);
 
         squat = findViewById(R.id.squatInput);
@@ -43,7 +43,7 @@ public class Settings extends AppCompatActivity {
         deadlift = findViewById(R.id.deadliftInput);
         overheadpress = findViewById(R.id.overheadpressInput);
 
-        /* Catch error if any of the userInput fields is empty */
+        /** Catch error if any of the userInput fields is empty */
         try {
             squat.setText(Double.toString(readData("DATA_SQUAT", this)));
         } catch (Exception e) {
@@ -69,7 +69,7 @@ public class Settings extends AppCompatActivity {
         }
     }
 
-    /* Submit user max weights */
+    /** Submit user max weights */
     public void submit(View v) {
         saveData("DATA_SQUAT", squat.getText().toString(), this);
         saveData("DATA_BENCH", bench.getText().toString(), this);
@@ -79,7 +79,7 @@ public class Settings extends AppCompatActivity {
         savedField.show();
     }
 
-    /* Save Data */
+    /** Save Data */
     private static void saveData(String key, String val, Context context) {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sharedPref.edit();
@@ -87,7 +87,7 @@ public class Settings extends AppCompatActivity {
         editor.commit();
     }
 
-    /* Read Data */
+    /** Read Data */
     public static double readData(String key, Context context) {
             SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
             return Double.parseDouble(sharedPref.getString(key, null));
