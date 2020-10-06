@@ -16,17 +16,17 @@ public class Why531 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_why531);
 
-        // Define ActionBar object
+        /* Define ActionBar object */
         ActionBar actionBar;
         actionBar = getSupportActionBar();
 
-        // Define ColorDrawable object and parse color
-        // using parseColor method
-        // with color hash code as its parameter
+        /* Define ColorDrawable object and parse color
+           using parseColor method
+           with color hash code as its parameter */
         ColorDrawable colorDrawable
                 = new ColorDrawable(Color.parseColor("#182130"));
 
-        // Set BackgroundDrawable
+        /* Set BackgroundDrawable */
         actionBar.setBackgroundDrawable(colorDrawable);
     }
 }

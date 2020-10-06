@@ -18,13 +18,12 @@ import com.example.gymstrengthbuddy.ui.Why531;
 import com.example.gymstrengthbuddy.ui.WorkoutView;
 import com.google.android.material.snackbar.Snackbar;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String RESULTS_EXTRA = "com.example.gymstrengthbuddy.RESULTS";  // User input weights
-    public static final String WORKOUT_NAME_EXTRA = "com.example.gymstrengthbuddy.NAME";    // Workout name
-    public static final String FIRST_OPEN = "com.example.gymstrengthbuddy.FIRSTOPEN";   // First time user? (boolean)
+    public static final String RESULTS_EXTRA = "com.example.gymstrengthbuddy.RESULTS";  /* User input weights */
+    public static final String WORKOUT_NAME_EXTRA = "com.example.gymstrengthbuddy.NAME";    /* Workout name */
+    public static final String FIRST_OPEN = "com.example.gymstrengthbuddy.FIRSTOPEN";   /* First time user? (boolean) */
     Settings data = new Settings();
     String[] quote = new String [] {"‘The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion.’\n— Arnold Schwarzenegger, seven-time Mr. Olympia",
             "‘If something stands between you and your success, move it. Never be denied.’\n— Dwayne ‘The Rock’ Johnson, actor and pro wrestler",
@@ -40,23 +39,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Define ActionBar object
+        /* Define ActionBar object */
         ActionBar actionBar;
         actionBar = getSupportActionBar();
 
-        // Define ColorDrawable object and parse color
-        // using parseColor method
-        // with color hash code as its parameter
+        /* Define ColorDrawable object and parse color
+           using parseColor method
+           with color hash code as its parameter */
         ColorDrawable colorDrawable
                 = new ColorDrawable(Color.parseColor("#182130"));
 
-        // Set BackgroundDrawable
+        /* Set BackgroundDrawable */
         actionBar.setBackgroundDrawable(colorDrawable);
 
-        // Set random quote
+        /* Set random quote */
         ((TextView)findViewById(R.id.quote)).setText(quote[r.nextInt(quote.length)]);
 
-        // Check if the user has opened the app before. Gives instructions for first time users.
+        /* Check if the user has opened the app before. Gives instructions for first time users. */
         SharedPreferences settings = getSharedPreferences(FIRST_OPEN, 0);
         boolean dialogShow = settings.getBoolean("dialogShow", false);
 
@@ -79,19 +78,19 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Open settings view
+    /* Open settings view */
     public void openSettings(View v) {
         Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
     }
 
-    // Open WHY 5/3/1 view
+    /* Open WHY 5/3/1 view */
     public void openWhy(View v) {
         Intent intent = new Intent(this, Why531.class);
         startActivity(intent);
     }
 
-    // Open work_out_view activity based on button id
+    /* Open work_out_view activity based on button id */
     public void openWorkoutView(View v) {
         try {
             Intent mainWorkout = new Intent(this, WorkoutView.class);

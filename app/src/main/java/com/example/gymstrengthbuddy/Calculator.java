@@ -2,7 +2,7 @@ package com.example.gymstrengthbuddy;
 
 public class Calculator {
 
-    // Week 1
+    /* Calculate methods for week 1 */
     public double getSetOne(double weight) {
         return weight * 0.65;
     }
@@ -15,7 +15,7 @@ public class Calculator {
         return weight * 0.85;
     }
 
-    // Week 2
+    /* Calculate methods for week 2 */
     public double getSetOneWeekTwo(double weight) {
         return weight * 0.7;
     }
@@ -28,7 +28,7 @@ public class Calculator {
         return weight * 0.9;
     }
 
-    // Week 3
+    /* Calculate methods for week 3 */
     public double getSetOneWeekThree(double weight) {
         return weight * 0.75;
     }
