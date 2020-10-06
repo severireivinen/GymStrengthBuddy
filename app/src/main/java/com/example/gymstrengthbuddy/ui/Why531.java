@@ -8,7 +8,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import com.example.gymstrengthbuddy.R;
-
+/* Jon Nesten, Severi Reivinen, Nicolas Calisiyor
+ */
 public class Why531 extends AppCompatActivity {
 
     @Override

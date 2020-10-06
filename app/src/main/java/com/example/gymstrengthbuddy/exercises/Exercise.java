@@ -3,7 +3,8 @@ package com.example.gymstrengthbuddy.exercises;
 import com.example.gymstrengthbuddy.Calculator;
 
 import java.util.ArrayList;
-
+/* Jon Nesten, Severi Reivinen, Nicolas Calisiyor
+ */
 public class Exercise extends Calculator {
     private double trainingMax;
     private ArrayList<String> squatSupp, benchSupp, deadliftSupp, overheadSupp;

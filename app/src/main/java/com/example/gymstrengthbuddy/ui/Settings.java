@@ -15,7 +15,8 @@ import android.widget.EditText;
 
 import com.example.gymstrengthbuddy.R;
 import com.google.android.material.snackbar.Snackbar;
-
+/* Jon Nesten, Severi Reivinen, Nicolas Calisiyor
+ */
 public class Settings extends AppCompatActivity {
     private EditText squat, bench, deadlift, overheadpress;
 

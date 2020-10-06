@@ -19,7 +19,8 @@ import com.example.gymstrengthbuddy.ui.WorkoutView;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Random;
-
+/* Jon Nesten, Severi Reivinen, Nicolas Calisiyor
+ */
 public class MainActivity extends AppCompatActivity {
     public static final String RESULTS_EXTRA = "com.example.gymstrengthbuddy.RESULTS";  /* User input weights */
     public static final String WORKOUT_NAME_EXTRA = "com.example.gymstrengthbuddy.NAME";    /* Workout name */

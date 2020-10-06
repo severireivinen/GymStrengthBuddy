@@ -15,7 +15,8 @@ import com.example.gymstrengthbuddy.exercises.Exercise;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-
+/* Jon Nesten, Severi Reivinen, Nicolas Calisiyor
+ */
 public class WorkoutView extends AppCompatActivity {
     private Exercise mainExercise, suppExercise;
     private DecimalFormat decimalFormat;
