@@ -6,6 +6,5 @@ The app itself was designed to help people who are starting weight lifting and d
 The calculations for the weights are done by following Jim Wendlers 5/3/1 program (https://www.t-nation.com/workouts/531-how-to-build-pure-strength, https://www.jimwendler.com/)
 
 Simple idea:
-
 Set up your max weights on 4 main areas, the program will calculate sets for you and give you ideas for supportive exercises for each day.
 
